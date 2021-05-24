@@ -28,7 +28,7 @@ async def startup_log_all_done():
     try:
         await bot.send_message(
             TELE,
-            f"**Black Lightning has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of userbot**",
+            f"**Patricia has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of userbot**",
         )
     except BaseException:
         print("Either PRIVATE_GROUP_ID is wrong or you have left the group.")
@@ -59,9 +59,9 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-print("Lightning has been deployed! ")
+print("Patricia has been deployed! ")
 
-print("Setting up Lightning")
+print("Setting up Patricia")
 
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
@@ -72,10 +72,10 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
             path1 = Path(f.name)
             shortname = path1.stem
             load_assistant(shortname.replace(".py", ""))
-    sed.info("Black Lightning  Bot Have Been Installed Successfully !")
+    sed.info("Patricia Userbot Have Been Installed Successfully !")
 else:
-    sed.info("Black Lightning Has Been Installed Sucessfully !")
-    sed.info("You Can Visit @lightning_support For Any Support Or Doubts")
+    sed.info("Patricia Has Been Installed Sucessfully !")
+    sed.info("You Can Visit @patricia_support For Any Support Or Doubts")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
